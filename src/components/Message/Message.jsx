@@ -1,9 +1,10 @@
-const Message = ({author = 'default', message}) => {
+const Message = ({author = 'default', message, children}) => {
     
   return (
     <div>
       <p>Author: {author}</p>
       <p>{message}</p>
+      <p>{children}</p>
     </div>
   );
 };
