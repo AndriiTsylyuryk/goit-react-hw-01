@@ -1,4 +1,6 @@
 import Alert from "./Alert/Alert";
+import LoginButton from "./Button/Button";
+
 
 
 const App = () => {
@@ -16,6 +18,7 @@ const App = () => {
       <Alert variant="warning">
         Please update your profile contact information
       </Alert>
+      <LoginButton variant="primary" />
     </main>
   );
 };
