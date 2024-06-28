@@ -1,35 +1,35 @@
-import clsx from 'clsx'
-import styles from './Profile.module.css'
+import clsx from "clsx";
+import styles from "./Profile.module.css";
 
-export const Profile = () => {
+export const Profile = ({ user }) => {
   return (
     <div className={clsx(styles.wrapper)}>
-  <div>
-    <img
-      src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-      alt="User avatar"
-    />
-    <p className ={clsx(styles.name)}>Petra Marica</p>
-    <p>@pmarica</p>
-    <p>Salvador, Brasil</p>
-  </div>
-
-  <ul>
-    <li>
-      <span>Followers</span>
-      <span>1000</span>
-    </li>
-    <li>
-      <span>Views</span>
-      <span>2000</span>
-    </li>
-    <li>
-      <span>Likes</span>
-      <span>3000</span>
-    </li>
-  </ul>
-</div>
-  )
-}
+      <div className={clsx(styles.card)}>
+        <div className={styles.nameCard}>
+          <div className={styles.imageWrapper}>
+          <img className={styles.img} src={user.avatar} alt="User avatar" />
+          </div>
+          <p className={styles.name}>{user.username}</p>
+          <p className={styles.tag}>{user.tag}</p>
+          <p className={styles.location}>{user.location}</p>
+        </div>
+        <ul className={styles.info} >
+          <li className={styles.infoItem}>
+            <span className={styles.follViewLike}>Followers</span>
+            <span>{user.stats.followers}</span>
+          </li>
+          <li className={styles.infoItem}>
+            <span className={styles.follViewLike}>Views</span>
+            <span>{user.stats.views}</span>
+          </li>
+          <li className={styles.infoItem}>
+            <span className={styles.follViewLike}>Likes</span>
+            <span>{user.stats.followers}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
 
 export default Profile;
