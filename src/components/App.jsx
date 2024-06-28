@@ -1,9 +1,12 @@
-import { Profile } from "./Profile/Profile";
+import Profile from "./Profile/Profile";
+import profileFata from './userData.json'
 
 
 const App = () => {
   return (
-   <Profile />
+    <div>
+      <Profile/>
+    </div>
   );
 };
 

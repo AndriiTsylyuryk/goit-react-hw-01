@@ -1,14 +1,15 @@
-
+import clsx from 'clsx'
+import styles from './Profile.module.css'
 
 export const Profile = () => {
   return (
-    <div>
+    <div className={clsx(styles.wrapper)}>
   <div>
     <img
       src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
       alt="User avatar"
     />
-    <p>Petra Marica</p>
+    <p className ={clsx(styles.name)}>Petra Marica</p>
     <p>@pmarica</p>
     <p>Salvador, Brasil</p>
   </div>
@@ -30,3 +31,5 @@ export const Profile = () => {
 </div>
   )
 }
+
+export default Profile;
