@@ -1,5 +1,6 @@
-import styles from "./FriendsList.module.css";
-const FriendItem = ({ friend }) => {
+import styles from './FriendsListItem.module.css'
+
+const FriendListItem = ({ friend }) => {
   return (
     <div>
       <img src={friend.avatar} alt="Avatar" width="48" />
@@ -13,4 +14,4 @@ const FriendItem = ({ friend }) => {
   );
 };
 
-export default FriendItem;
+export default FriendListItem;
