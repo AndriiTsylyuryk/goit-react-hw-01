@@ -1,0 +1,27 @@
+.list {
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  margin-left: auto;
+  margin-inline-end: auto;
+  margin-bottom: 24px;
+}
+
+.listItem {
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px 4px gray;
+  padding: 20px;
+  text-align: center;
+}
+
+.friend {
+  font-weight: 600;
+}
+
+.statusOnline {
+  color: green;
+}
+
+.statusOffline {
+  color: red;
+}

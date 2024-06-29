@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .card {
@@ -48,21 +49,20 @@
   color: gray;
 }
 
-.info{
+.info {
   display: flex;
   justify-content: space-around;
   background-color: gray;
   border-radius: 20px;
 }
 
-.infoItem{
+.infoItem {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.follViewLike{
+.follViewLike {
   font-size: 20px;
   font-weight: 550;
-
 }

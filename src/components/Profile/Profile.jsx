@@ -7,13 +7,13 @@ export const Profile = ({ user }) => {
       <div className={clsx(styles.card)}>
         <div className={styles.nameCard}>
           <div className={styles.imageWrapper}>
-          <img className={styles.img} src={user.avatar} alt="User avatar" />
+            <img className={styles.img} src={user.avatar} alt="User avatar" />
           </div>
           <p className={styles.name}>{user.username}</p>
           <p className={styles.tag}>{user.tag}</p>
           <p className={styles.location}>{user.location}</p>
         </div>
-        <ul className={styles.info} >
+        <ul className={styles.info}>
           <li className={styles.infoItem}>
             <span className={styles.follViewLike}>Followers</span>
             <span>{user.stats.followers}</span>
